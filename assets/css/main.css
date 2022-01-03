@@ -1,0 +1,48 @@
+@import url(./global.css);
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: darkblue  ;
+}
+
+header span{
+    float: left;
+    padding: 20px 0px;
+    font-size: 2rem;
+    font-family:sans-serif;
+    color: #fff;
+}
+
+section{
+    margin: 20px 0;
+}
+
+section article{
+    width:100%;
+    float: left;
+}
+
+article .content-article{
+    width: 98%;
+    height: auto;
+}
+
+.content-article img{
+    width: 100%;
+   height: 450px;
+}
+
+.watch{
+    text-align: center;
+}
+
+.watch input[type='submit']{
+    padding: 10px;
+    margin: 5px auto;
+    color: #fff;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: cornflowerblue;
+}

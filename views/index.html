@@ -1,0 +1,30 @@
+<%- include('./layouts/header.html') -%>
+
+    <header>
+        <div class="container">
+            <span>Movies-to-Watch</span>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section>
+                <% filmes.forEach(filme=> { %>
+                    <article>
+                        <div class="content-article">
+                            <img src="<%=filme.image%>" alt="<%=filme.titulo%>">
+                        </div>
+                        <div class="watch">
+                            <span>
+                                <form action="/watch" method="POST">
+                                    <input type="hidden" name="id" value=<%=filme.id_filme%>>
+                                    <input type="submit" name="watch" value="Assistimos">
+                                </form>
+                            </span>
+                        </div>
+                    </article>
+                    <% }) %>
+            </section>
+        </div>
+    </main>
+
+    <%- include('./layouts/footer.html') -%>
