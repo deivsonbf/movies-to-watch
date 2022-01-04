@@ -1,6 +1,6 @@
 ## Cadastro simples de filmes a serem assistidos feito com EJS, Node JS e o banco Mysql
 
-## Feito com Mobile First e será implementado a versao para PC com media queries
+### Feito com Mobile First e será implementado a versao para PC com media queries
 
 #### Módulos utilizados
 
