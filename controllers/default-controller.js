@@ -10,6 +10,25 @@ exports.indexPage = (req, res) => {
     })
 }
 
+exports.allMovies = (req, res) => {
+    res.render('cadastrar_filme')
+}
+
+exports.insertMovies = (req, res) => {
+    let watched = 0;
+    mysql.getConnection((error, conn) => {
+        const sql = `INSERT INTO filmes (titulo, image ,watched) values (? , ? , ?)`;
+        conn.query(sql, [req.body.titulo, req.body.image , watched], (error, result) => {
+            conn.release()
+            if (error) {
+                return res.send(error)
+            }
+
+            res.redirect('/')
+        })
+    })
+}
+
 exports.watched = ((req, res) => {
     mysql.getConnection((error, conn) => {
 
@@ -20,7 +39,7 @@ exports.watched = ((req, res) => {
         const sql = `UPDATE filmes SET watched = ? WHERE id_filme = ?;`
 
         conn.query(sql, [watch, id], (error, result) => {
-            
+
             conn.release();
             if (error) {
                 return res.send(error)
