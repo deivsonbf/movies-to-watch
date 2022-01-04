@@ -1,6 +1,9 @@
 ## Cadastro simples de filmes a serem assistidos feito com EJS, Node JS e o banco Mysql
 
-### Feito com Mobile First e será implementado a versao para PC com media queries
+### OBS: Feito com Mobile First e ainda será implementado a versao para PC com media queries
+
+#### Projeto com Deploy realizado no Heroku
+https://weekend-movies.herokuapp.com/
 
 #### Módulos utilizados
 
