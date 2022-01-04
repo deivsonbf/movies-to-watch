@@ -3,7 +3,6 @@
 ### OBS: Feito com Mobile First e ainda será implementado a versao para PC com media queries
 
 #### Projeto com Deploy realizado no Heroku
-https://weekend-movies.herokuapp.com/
 
 #### Módulos utilizados
 
