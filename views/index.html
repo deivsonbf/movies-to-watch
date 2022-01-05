@@ -11,7 +11,11 @@
                 <% filmes.forEach(filme=> { %>
                     <article>
                         <div class="content-article">
-                            <img src="<%=filme.image%>" alt="<%=filme.titulo%>">
+                            <% if (filme.image !='' ) { %>
+                                <img src="<%=filme.image%>" alt="<%=filme.titulo%>">
+                                <% } else { %>
+                                    <img src="/img/noimage.jpg" alt="<%=filme.titulo%>">
+                                    <% } %>
                         </div>
                         <div class="watch">
                             <span>
@@ -31,9 +35,9 @@
                                             <img src="/img/telecine.png" alt="telecine">
                                             <% } else if (filme.streaming=='4' ) { %>
                                                 <img src="/img/hbo.webp" alt="hbo">
-                                            <% } else { %>
-                                                <img src="/img/other.png" alt="pirate">
-                                                <% } %>
+                                                <% } else { %>
+                                                    <img src="/img/other.png" alt="pirate">
+                                                    <% } %>
                             </span>
                         </div>
                     </article>
