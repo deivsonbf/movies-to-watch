@@ -17,8 +17,8 @@ exports.allMovies = (req, res) => {
 exports.insertMovies = (req, res) => {
     let watched = 0;
     mysql.getConnection((error, conn) => {
-        const sql = `INSERT INTO filmes (titulo, image ,watched) values (? , ? , ?)`;
-        conn.query(sql, [req.body.titulo, req.body.image , watched], (error, result) => {
+        const sql = `INSERT INTO filmes (titulo, image ,streaming , watched) values (? , ? , ? , ?)`;
+        conn.query(sql, [req.body.titulo, req.body.image, req.body.streaming, watched], (error, result) => {
             conn.release()
             if (error) {
                 return res.send(error)

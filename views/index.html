@@ -21,6 +21,21 @@
                                 </form>
                             </span>
                         </div>
+                        <div class="streaming">
+                            <span>
+                                <% if (filme.streaming=='2' ) { %>
+                                    <img src="/img/netflix.png" alt="netflix">
+                                    <% } else if (filme.streaming=='1' ) { %>
+                                        <img src="/img/prime.png" alt="prime">
+                                        <% } else if (filme.streaming=='3' ) { %>
+                                            <img src="/img/telecine.png" alt="telecine">
+                                            <% } else if (filme.streaming=='4' ) { %>
+                                                <img src="/img/hbo.webp" alt="hbo">
+                                            <% } else { %>
+                                                <img src="/img/other.png" alt="pirate">
+                                                <% } %>
+                            </span>
+                        </div>
                     </article>
                     <% }) %>
             </section>

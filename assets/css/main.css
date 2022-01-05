@@ -34,7 +34,8 @@ article .content-article{
 }
 
 .watch{
-    text-align: center;
+    width: 50%;
+    float: left;
 }
 
 .watch input[type='submit']{
@@ -60,7 +61,7 @@ article .content-article{
     font-size: 1.5rem;
 }
 
-.input-group input{
+.input-group input,select{
     width: 100%;
     padding: 10px;
     display: block;
@@ -92,3 +93,13 @@ article .content-article{
     color: #fff;
 }
 
+.streaming{
+   width: 62px;
+   padding: 7px 10px;
+   float: right;
+}
+
+.streaming img{
+    width: 100%;
+    height: auto;
+}
