@@ -78,10 +78,11 @@ article .content-article{
         border: none;
         font-size: 1.5rem;
         color: #fff;
-        background-color: darkslateblue;
+        background-color: #1A237E;
         cursor: pointer;
         float:right;
 }
+
 
 .add-btn{
     padding: 15px 25px;
@@ -90,8 +91,8 @@ article .content-article{
     right: 20px;
     border-radius: 50px;
     font-size: 2rem;
-    background-color: darkslateblue;
-    opacity: 0.5;
+    background-color: #293594;
+    opacity: 0.7;
 }
 
 .add-btn a{
@@ -111,9 +112,9 @@ article .content-article{
 }
 
 .content-article h2{
+    font-size: 1.2rem;
     height: 50px;
     font-family: sans-serif;
-    color: darkblue;
 }
 
 @media (min-width: 473px) and (max-width: 767.98px) {
@@ -133,11 +134,7 @@ article .content-article{
         height: 300px;
     }
 
-    .content-article h2{
-        font-size: 1.2rem;
-        height: 50px;
-        font-family: sans-serif;
-    }
+
 
 }
 
@@ -157,7 +154,8 @@ article .content-article{
 
    .content-article img{
         height: 300px;
-    }   
+    }
+
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -197,4 +195,5 @@ article .content-article{
    .content-article img{
         height: 300px;
     }
+
 }
