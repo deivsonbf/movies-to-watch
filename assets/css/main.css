@@ -133,6 +133,12 @@ article .content-article{
         height: 300px;
     }
 
+    .content-article h2{
+        font-size: 1.2rem;
+        height: 50px;
+        font-family: sans-serif;
+    }
+
 }
 
 /* Medium devices (tablets, 768px and up)*/
