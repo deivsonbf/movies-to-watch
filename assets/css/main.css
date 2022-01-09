@@ -1,5 +1,10 @@
 @import url(./global.css);
 
+.clear{
+    clear: both;
+    background-color: yellow;
+}
+
 header{
     width: 100%;
     height: 80px;
@@ -20,16 +25,16 @@ section{
 
 section article{
     width:100%;
-    float: left;
+    height: 550px;
 }
 
 article .content-article{
-    width: 98%;
+    width: 100%;
     height: auto;
 }
 
 .content-article img{
-    width: 100%;
+   width: 100%;
    height: 450px;
 }
 
@@ -103,4 +108,87 @@ article .content-article{
 .streaming img{
     width: 100%;
     height: auto;
+}
+
+.content-article h2{
+    height: 40px;
+    font-family: sans-serif;
+    color: darkblue;
+}
+
+@media (min-width: 473px) and (max-width: 767.98px) {
+
+    section article{
+        width:50%;
+        height: 450px;
+        float: left;
+   }    
+
+   article .content-article{
+    width: 98%;
+    margin: 0 auto;
+    }
+
+   .content-article img{
+        height: 300px;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    section article{
+        width:33.33%;
+        height: 450px;
+        float: left;
+   }
+
+   article .content-article{
+    width: 98%;
+    margin: 0 auto;
+    }
+
+   .content-article img{
+        height: 300px;
+    }   
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    section article{
+        width:25%;
+        height: 450px;
+        float: left;
+
+   }
+
+   article .content-article{
+    width: 98%;
+    margin: 0 auto;
+    }
+
+   .content-article img{
+        height: 300px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    section article{
+        width:20%;
+        height: 450px;
+        float: left;
+
+   }
+
+   article .content-article{
+    width: 98%;
+    margin: 0 auto;
+}
+
+   .content-article img{
+        height: 300px;
+    }
 }
